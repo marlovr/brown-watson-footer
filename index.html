@@ -1,9 +1,10 @@
 <style>
-
-    table, td, tr {
+    table,
+    td,
+    tr {
         padding: 0;
-        border-spacing: 0;
-        border-collapse: separate;
+        /* border-spacing: 0;
+        border-collapse: separate; */
         font-family: 'Helvetica';
     }
 
@@ -14,16 +15,20 @@
 
     .section-one td,
     .section-two td {
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     .col-first {
-        width: 244px;
+        width: 160px;
         vertical-align: bottom;
     }
 
+    .col-first.col-align-top {
+        vertical-align: top;
+    }
+
     .col-last {
-        width: 66px;
+        width: 39px;
         vertical-align: bottom;
     }
 
@@ -34,25 +39,28 @@
 
     .section-one-inner .row-one,
     .section-two-inner {
-        height: 200px;
+        /* height: 200px; */
     }
 
-    .section-one-inner .row-two,
+    .section-one-inner .row-one td:first-child {
+        text-align: right;
+    }
+
+    .section-one-inner .row-two {
+        /*height: 128px;*/
+    }
+
     .section-two-inner {
-        height: 128px;
+        height: 114px;
     }
 
-    .personal-info, .personal-info table {
+    .personal-info,
+    .personal-info table {
         background-color: #25408e;
         color: #ffffff;
         padding: 10px;
         vertical-align: top;
 
-
-    }
-
-    .row-two.personal-info > td {
-        height: 128px;
 
     }
 
@@ -72,41 +80,50 @@
     }
 
     .personal-info .bottom-row {
-
+        /* height: 40px;*/
     }
+
+    .personal-info .bottom-row {}
 
     .personal-info .icon {
-        background-color: #fff;
+        /* background-color: #fff;
         color: #25408e;
-        border-radius: 50%;
+        border-radius: 50%;*/
+        position: relative;
+        top: 5px;
         display: inline-block;
-        width: 21px;
+        /* width: 21px; */
     }
 
-    .personal-info .icon span {
+    /* .personal-info .icon span {
         position: relative;
         left: -5px;
         top: -1px;
         font-stretch: expanded;
-    }
+    } */
 
-    .personal-info .email, .personal-info .phone, .personal-info .fax {
+    .personal-info .email,
+    .personal-info .phone,
+    .personal-info .fax {
         text-align: right;
-        font-size: 18px;
+        font-size: 10pt;
     }
-.personal-info .phone, .personal-info .fax {
-    vertical-align: bottom;
-    padding-bottom: 12px;
-}
 
-.personal-info .name {
-    font-size: 24px;
-    font-weight: bold;
-}
+    .personal-info .phone,
+    .personal-info .fax {
+        vertical-align: bottom;
+        padding-top: 12px;
+    }
 
-.personal-info .position {
-    font-size: 18px;
-}
+    .personal-info .name {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    .personal-info .position {
+        font-size: 10pt;
+        width: 61.5%;
+    }
 
 
     .brand-images img {
@@ -118,20 +135,75 @@
         width: calc(100%/6);
     }
 
-    .section-two {
-
+    .disclaimer-text {
+        color: #b1b4b6;
+        font-size: 6.5pt;
+        text-align: justify;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
+
+    .section-two {}
 
     .bwi-logo-image {
         width: 100%;
         position: relative;
-        bottom: -29px;
     }
 
     .qa-logo-image {
         width: 100%;
         position: relative;
-        bottom: -18px;
+        bottom: -3px;
+    }
+
+    table.contact-info {
+        height: 100%;
+        width: 100%;
+    }
+
+    .contact-info .address div {
+        font-size: 7.5pt;
+        color: #9797c3;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact-info .address div:first-child {
+        text-align: justify;
+        padding-top: 13px;
+    }
+
+    .contact-info .address div:first-child:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+
+    .contact-info .phone-fax {
+        font-size: 9pt;
+        color: #9797c3;
+        padding-top: 16px;
+    }
+
+    .contact-info .phone-fax div {
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 4px;
+    }
+
+    .contact-info .phone-fax div:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bwi-bubble {
+        width: 100%;
+        position: relative;
+        right: 22px;
+        bottom: -10px;
+
     }
 </style>
 <div>
@@ -154,7 +226,9 @@
                     <tr class="row-one">
 
                         <td>
-                        BWI BALLOON HERE!
+                            <div class="bwi-bubble">
+                                <img src="bwi-bubble.png" />
+                            </div>
                         </td>
                     </tr>
                     <!-- BLUE CONTACT ELEMENT-->
@@ -170,38 +244,38 @@
                                     </td>
                                     <td class="email" colspan="2">
                                         <div class="icon">
-                                            <span>e</span>
+                                            <img src="e-dot.png" />
                                         </div>
-                            
+
                                         bennyb@brownwatson.com.au
-                                        
+
                                         <!-- email -->
                                     </td>
                                 </tr>
 
-                                <tr>
+                                <tr class="bottom-row">
                                     <!-- position declaration, phone and fax-->
                                     <td class="position">
                                         Customer Service Officer
                                         <!-- position declaration -->
                                     </td>
                                     <td class="phone">
-                                            <div class="icon">
-                                                    <span>p</span>
-                                                </div>
+                                        <div class="icon">
+                                            <img src="p-dot.png" />
+                                        </div>
                                         +61 3 9730 6092
                                         <!-- phone -->
                                     </td>
                                     <td class="fax">
-                                            <div class="icon">
-                                                    <span>f</span>
-                                                </div>
+                                        <div class="icon">
+                                            <img src="f-dot.png" />
+                                        </div>
                                         +61 3 9730 6050
-                                    <!-- fax -->
+                                        <!-- fax -->
                                     </td>
                                 </tr>
                             </table>
-                        
+
                         </td>
                     </tr>
 
@@ -223,8 +297,28 @@
         <tr>
             <!-- contact info text-->
 
-            <td class="col-first">
-                contact info here
+            <td class="col-first col-align-top">
+                <table class="contact-info">
+                    <tr>
+                        <td class="address">
+                            <div>1500 Ferntree Gully Road</div>
+                            <div>Knoxfield Victoria 3180</div>
+                            <div>Australia</div>
+                            <!-- address -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="phone-fax">
+                            <div>
+                                P: +61 3 9730 6000
+                            </div>
+                            <div>
+                                F: +61 3 9730 6050
+                            </div>
+                            <!-- phone and fax -->
+                        </td>
+                    </tr>
+                </table>
             </td>
             <!-- where second table is: logos and disclaimer text-->
             <td>
@@ -233,29 +327,34 @@
                     <!-- logos-->
                     <tr class="brand-images">
                         <td>
-                            <img src="narva-logo.jpg" />
+                            <img src="narva-grey.png" />
                         </td>
                         <td>
-                            <img src="projecta-logo-pl.png" />
+                            <img src="projecta-grey.png" />
                         </td>
                         <td>
-                            <img src="BIG-RED-logo-pl.jpg" />
+                            <img src="bigred-grey.png" />
 
                         </td>
                         <td>
-                            <img src="MaxiLight-logo-pl.png" />
+                            <img src="maxi-grey.png" />
                         </td>
                         <td>
-                            <img src="phillips-logo-pl.png" />
+                            <img src="phillips-grey.png" />
                         </td>
                         <td>
-                            <img src="osram-logo-pl.jpg" />
+                            <img src="osram-grey.png" />
                         </td>
                     </tr>
                     <!-- disclaimer text-->
                     <tr>
-                        <td colspan="6">
-                            disclaimer
+                        <td class="disclaimer-text" colspan="6">
+                            Disclaimer:
+                            <br/>This message contains confidential information intended for the use of the addressee named above.
+                            If you are not the intended recipient of this message you must not view, disseminate, copy or
+                            take any action in reliance on it. If you have received this message in error please notify Brown
+                            & Watson immediately. Any views expressed in this message are those of the individual sender,
+                            except where the sender specifically states them to be the views of Brown & Watson.
                             <!-- disclaimer text here exactly-->
                         </td>
                     </tr>
