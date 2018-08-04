@@ -1,0 +1,270 @@
+<style>
+
+    table, td, tr {
+        padding: 0;
+        border-spacing: 0;
+        border-collapse: separate;
+        font-family: 'Helvetica';
+    }
+
+    .section-one,
+    .section-two {
+        width: 100%;
+    }
+
+    .section-one td,
+    .section-two td {
+        border: 1px solid black;
+    }
+
+    .col-first {
+        width: 244px;
+        vertical-align: bottom;
+    }
+
+    .col-last {
+        width: 66px;
+        vertical-align: bottom;
+    }
+
+    .section-one-inner,
+    .section-two-inner {
+        width: 100%;
+    }
+
+    .section-one-inner .row-one,
+    .section-two-inner {
+        height: 200px;
+    }
+
+    .section-one-inner .row-two,
+    .section-two-inner {
+        height: 128px;
+    }
+
+    .personal-info, .personal-info table {
+        background-color: #25408e;
+        color: #ffffff;
+        padding: 10px;
+        vertical-align: top;
+
+
+    }
+
+    .row-two.personal-info > td {
+        height: 128px;
+
+    }
+
+    .personal-info table {
+        width: 100%;
+        height: 100%;
+        border-color: #ffffff;
+    }
+
+    .personal-info table td {
+        vertical-align: top;
+        border: 0;
+    }
+
+    .personal-info .top-row {
+        height: 25px;
+    }
+
+    .personal-info .bottom-row {
+
+    }
+
+    .personal-info .icon {
+        background-color: #fff;
+        color: #25408e;
+        border-radius: 50%;
+        display: inline-block;
+        width: 21px;
+    }
+
+    .personal-info .icon span {
+        position: relative;
+        left: -5px;
+        top: -1px;
+        font-stretch: expanded;
+    }
+
+    .personal-info .email, .personal-info .phone, .personal-info .fax {
+        text-align: right;
+        font-size: 18px;
+    }
+.personal-info .phone, .personal-info .fax {
+    vertical-align: bottom;
+    padding-bottom: 12px;
+}
+
+.personal-info .name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.personal-info .position {
+    font-size: 18px;
+}
+
+
+    .brand-images img {
+        max-width: 100px;
+    }
+
+    .brand-images td {
+        text-align: center;
+        width: calc(100%/6);
+    }
+
+    .section-two {
+
+    }
+
+    .bwi-logo-image {
+        width: 100%;
+        position: relative;
+        bottom: -29px;
+    }
+
+    .qa-logo-image {
+        width: 100%;
+        position: relative;
+        bottom: -18px;
+    }
+</style>
+<div>
+    <!-- table contains first half of footer containing BWI logo, 
+        email balloon, email contacts below and qa image-->
+    <table class="section-one">
+        <tr>
+
+            <!-- START BWI IMAGE HERE -->
+            <td class="col-first">
+                <img class="bwi-logo-image" src="bwi-logo.png" />
+                <!-- END BWI IMAGE HERE-->
+            </td>
+
+            <td>
+                <!-- Contact info and email balloon-->
+                <table class="section-one-inner">
+                    <!-- BWI EMAIL BALLOON-->
+                    <!-- tr row one-->
+                    <tr class="row-one">
+
+                        <td>
+                        BWI BALLOON HERE!
+                        </td>
+                    </tr>
+                    <!-- BLUE CONTACT ELEMENT-->
+                    <!-- tr row two-->
+                    <tr class="row-two personal-info">
+                        <td>
+                            <table>
+                                <tr class="top-row">
+                                    <!-- Name and email-->
+                                    <td class="name">
+                                        Benny Blood
+                                        <!-- name -->
+                                    </td>
+                                    <td class="email" colspan="2">
+                                        <div class="icon">
+                                            <span>e</span>
+                                        </div>
+                            
+                                        bennyb@brownwatson.com.au
+                                        
+                                        <!-- email -->
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <!-- position declaration, phone and fax-->
+                                    <td class="position">
+                                        Customer Service Officer
+                                        <!-- position declaration -->
+                                    </td>
+                                    <td class="phone">
+                                            <div class="icon">
+                                                    <span>p</span>
+                                                </div>
+                                        +61 3 9730 6092
+                                        <!-- phone -->
+                                    </td>
+                                    <td class="fax">
+                                            <div class="icon">
+                                                    <span>f</span>
+                                                </div>
+                                        +61 3 9730 6050
+                                    <!-- fax -->
+                                    </td>
+                                </tr>
+                            </table>
+                        
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+            <!-- quality assurance image-->
+            <td class="col-last">
+                <img class="qa-logo-image" src="CertifiedSystemQualityImage.png" />
+            </td>
+
+
+        </tr>
+    </table>
+    <!-- contains second half of footer:
+        text with contact info, logos and disclaimer text-->
+    <table class="section-two">
+
+        <tr>
+            <!-- contact info text-->
+
+            <td class="col-first">
+                contact info here
+            </td>
+            <!-- where second table is: logos and disclaimer text-->
+            <td>
+                <!-- contains logos and disclaimer text-->
+                <table class="section-two-inner">
+                    <!-- logos-->
+                    <tr class="brand-images">
+                        <td>
+                            <img src="narva-logo.jpg" />
+                        </td>
+                        <td>
+                            <img src="projecta-logo-pl.png" />
+                        </td>
+                        <td>
+                            <img src="BIG-RED-logo-pl.jpg" />
+
+                        </td>
+                        <td>
+                            <img src="MaxiLight-logo-pl.png" />
+                        </td>
+                        <td>
+                            <img src="phillips-logo-pl.png" />
+                        </td>
+                        <td>
+                            <img src="osram-logo-pl.jpg" />
+                        </td>
+                    </tr>
+                    <!-- disclaimer text-->
+                    <tr>
+                        <td colspan="6">
+                            disclaimer
+                            <!-- disclaimer text here exactly-->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="col-last">
+
+            </td>
+
+        </tr>
+    </table>
+</div>
