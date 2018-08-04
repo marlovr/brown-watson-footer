@@ -1,1 +1,2 @@
-# brown-watson-footer
+# brown-watson-
+Email footer for brown and watchson
