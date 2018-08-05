@@ -131,8 +131,13 @@
     }
 
     .brand-images td {
-        text-align: center;
-        width: calc(100%/6);
+        text-align: justify;
+    }
+
+    .brand-images td:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
     }
 
     .disclaimer-text {
@@ -205,6 +210,26 @@
         bottom: -10px;
 
     }
+
+    /* this is for interactive images */
+
+    .rollover {
+        display: inline-block;
+    }
+
+    .rollover:hover>img,
+    * [summary=rollover]:hover>img {
+        max-height: 0px !important;
+    }
+
+    /* Hides visible image on rollover */
+
+    .rollover:hover>div img,
+    * [summary=rollover]:hover>div img {
+        max-height: none !important;
+    }
+
+    /* Makes hidden image appear in its place */
 </style>
 <div>
     <!-- table contains first half of footer containing BWI logo, 
@@ -327,23 +352,96 @@
                     <!-- logos-->
                     <tr class="brand-images">
                         <td>
-                            <img src="narva-grey.png" />
-                        </td>
-                        <td>
-                            <img src="projecta-grey.png" />
-                        </td>
-                        <td>
-                            <img src="bigred-grey.png" />
+                            <a class="rollover" summary="rollover">
 
-                        </td>
-                        <td>
-                            <img src="maxi-grey.png" />
-                        </td>
-                        <td>
-                            <img src="phillips-grey.png" />
-                        </td>
-                        <td>
-                            <img src="osram-grey.png" />
+
+                                <img src="narva-grey.png" style="display:block" alt="hover" width="255" border="0">
+                                <!-- Visible image -->
+
+                                <div style="mso-hide:all;">
+                                    <!-- Hides invisible image in Outlook -->
+
+                                    <img src="narva-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                    <!-- Invisible image -->
+
+                                </div>
+
+                            </a>
+                            <a class="rollover" summary="rollover">
+
+
+                                <img src="projecta-grey.png" style="display:block" alt="hover" width="255" border="0">
+                                <!-- Visible image -->
+
+                                <div style="mso-hide:all;">
+                                    <!-- Hides invisible image in Outlook -->
+
+                                    <img src="projecta-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                    <!-- Invisible image -->
+
+                                </div>
+
+                            </a>
+                            <a class="rollover" summary="rollover">
+
+
+                                <img src="bigred-grey.png" style="display:block" alt="hover" width="255" border="0">
+                                <!-- Visible image -->
+
+                                <div style="mso-hide:all;">
+                                    <!-- Hides invisible image in Outlook -->
+
+                                    <img src="bigred-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                    <!-- Invisible image -->
+
+                                </div>
+
+                            </a>
+                            <a class="rollover" summary="rollover">
+
+
+                                <img src="maxi-grey.png" style="display:block" alt="hover" width="255" border="0">
+                                <!-- Visible image -->
+
+                                <div style="mso-hide:all;">
+                                    <!-- Hides invisible image in Outlook -->
+
+                                    <img src="maxi-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                    <!-- Invisible image -->
+
+                                </div>
+
+                            </a>
+                            <a class="rollover" summary="rollover">
+
+
+                                <img src="phillips-grey.png" style="display:block" alt="hover" width="255" border="0">
+                                <!-- Visible image -->
+
+                                <div style="mso-hide:all;">
+                                    <!-- Hides invisible image in Outlook -->
+
+                                    <img src="phillips-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                    <!-- Invisible image -->
+
+                                </div>
+
+                            </a>
+                            <a class="rollover" summary="rollover">
+
+
+                                <img src="osram-grey.png" style="display:block" alt="hover" width="255" border="0">
+                                <!-- Visible image -->
+
+                                <div style="mso-hide:all;">
+                                    <!-- Hides invisible image in Outlook -->
+
+                                    <img src="osram-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                    <!-- Invisible image -->
+
+                                </div>
+
+                            </a>
                         </td>
                     </tr>
                     <!-- disclaimer text-->
