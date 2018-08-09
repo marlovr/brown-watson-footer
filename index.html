@@ -145,14 +145,10 @@
 
 
     .brand-images img {
-        max-width: 120px;
-        max-height: 26px;
+        width: auto;
     }
 
-    .brand-images td {
-        text-align: justify;
-        height: 49px;
-    }
+    .brand-images td {}
 
     .brand-images td:after {
         content: "";
@@ -233,6 +229,19 @@
 
     /* this is for interactive images */
 
+    .brand-images table {
+        width: 100%;
+        text-align: center;
+    }
+
+    .brand-images table td:last-child {
+        text-align: right;
+    }
+
+    .brand-images table td:first-child {
+        text-align: left;
+    }
+
     .rollover {
         display: inline-block;
     }
@@ -250,30 +259,16 @@
         max-height: none !important;
     }
 
-    .big-red {
-        position: relative;
-        left: 11px;
+    .disclaimer-text a {
+        color: #b1b4b6;
+
     }
 
-    .maxi-light {
-        position: relative;
-        left: 31px;
+    .disclaimer-text a:hover {
+        font-weight: bold;
+        color: #333;
     }
 
-    .phillips {
-        position: relative;
-        left: 20px;
-    }
-
-.disclaimer-text a {
-    color: #b1b4b6;
-
-}
-
-.disclaimer-text a:hover{
-    font-weight: bold;
-    color: #333;
-}
     /* Makes hidden image appear in its place */
 </style>
 <div>
@@ -400,113 +395,132 @@
                     <!-- logos-->
                     <tr class="brand-images">
                         <td>
-                            <a href="https://www.narva.com.au" target="_blank" class="rollover" summary="rollover">
+                            <table>
+                                <tr class="brand-images">
+                                    <!-- WHOLE ROW OF IMAGES -->
+                                    <td>
+                                        <a href="https://www.narva.com.au" target="_blank" class="rollover" summary="rollover">
 
 
-                                <img src="narva-grey.png" alt="Narva" style="display:block" alt="hover" width="255" border="0">
-                                <!-- Visible image -->
+                                            <img src="narva-grey.png" alt="Narva" style="display:block" alt="hover" width="255" border="0">
+                                            <!-- Visible image -->
 
-                                <div style="mso-hide:all;">
-                                    <!-- Hides invisible image in Outlook -->
+                                            <div style="mso-hide:all;">
+                                                <!-- Hides invisible image in Outlook -->
 
-                                    <img src="narva-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
-                                    <!-- Invisible image -->
+                                                <img src="narva-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                                <!-- Invisible image -->
 
-                                </div>
+                                            </div>
 
-                            </a>
-                            <a href="https://www.projecta.com.au/" target="_blank" class="rollover" summary="rollover">
-
-
-                                <img src="projecta-grey.png" alt="Projecta" style="display:block" alt="hover" width="255" border="0">
-                                <!-- Visible image -->
-
-                                <div style="mso-hide:all;">
-                                    <!-- Hides invisible image in Outlook -->
-
-                                    <img src="projecta-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
-                                    <!-- Invisible image -->
-
-                                </div>
-
-                            </a>
-                            <a href="http://www.bigredled.com.au/" target="_blank" class="rollover big-red" summary="rollover">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.projecta.com.au/" target="_blank" class="rollover" summary="rollover">
 
 
-                                <img src="bigred-grey.png" alt="Big Red" style="display:block" alt="hover" width="255" border="0">
-                                <!-- Visible image -->
+                                            <img src="projecta-grey.png" alt="Projecta" style="display:block" alt="hover" width="255" border="0">
+                                            <!-- Visible image -->
 
-                                <div style="mso-hide:all;">
-                                    <!-- Hides invisible image in Outlook -->
+                                            <div style="mso-hide:all;">
+                                                <!-- Hides invisible image in Outlook -->
 
-                                    <img src="bigred-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
-                                    <!-- Invisible image -->
+                                                <img src="projecta-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                                <!-- Invisible image -->
 
-                                </div>
+                                            </div>
 
-                            </a>
-                            <a class="rollover maxi-light" summary="rollover">
-
-
-                                <img src="maxi-grey.png" style="display:block" alt="hover" width="255" border="0">
-                                <!-- Visible image -->
-
-                                <div style="mso-hide:all;">
-                                    <!-- Hides invisible image in Outlook -->
-
-                                    <img src="maxi-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
-                                    <!-- Invisible image -->
-
-                                </div>
-
-                            </a>
-                            <a href="https://www.philips.com.au/" target="_blank" class="rollover phillips" summary="rollover">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="http://www.bigredled.com.au/" target="_blank" class="rollover big-red" summary="rollover">
 
 
-                                <img src="phillips-grey.png" alt="Phillips" style="display:block" alt="hover" width="255" border="0">
-                                <!-- Visible image -->
+                                            <img src="bigred-grey.png" alt="Big Red" style="display:block" alt="hover" width="255" border="0">
+                                            <!-- Visible image -->
 
-                                <div style="mso-hide:all;">
-                                    <!-- Hides invisible image in Outlook -->
+                                            <div style="mso-hide:all;">
+                                                <!-- Hides invisible image in Outlook -->
 
-                                    <img src="phillips-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
-                                    <!-- Invisible image -->
+                                                <img src="bigred-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                                <!-- Invisible image -->
 
-                                </div>
+                                            </div>
 
-                            </a>
-                            <a href="https://www.osram.asia/cb/" target="_blank" class="rollover" summary="rollover">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a class="rollover maxi-light" summary="rollover">
 
 
-                                <img src="osram-grey.png" alt="Osram" style="display:block" alt="hover" width="255" border="0">
-                                <!-- Visible image -->
+                                            <img src="maxi-grey.png" style="display:block" alt="hover" width="255" border="0">
+                                            <!-- Visible image -->
 
-                                <div style="mso-hide:all;">
-                                    <!-- Hides invisible image in Outlook -->
+                                            <div style="mso-hide:all;">
+                                                <!-- Hides invisible image in Outlook -->
 
-                                    <img src="osram-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
-                                    <!-- Invisible image -->
+                                                <img src="maxi-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                                <!-- Invisible image -->
 
-                                </div>
+                                            </div>
 
-                            </a>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.philips.com.au/" target="_blank" class="rollover phillips" summary="rollover">
+
+
+                                            <img src="phillips-grey.png" alt="Phillips" style="display:block" alt="hover" width="255" border="0">
+                                            <!-- Visible image -->
+
+                                            <div style="mso-hide:all;">
+                                                <!-- Hides invisible image in Outlook -->
+
+                                                <img src="phillips-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                                <!-- Invisible image -->
+
+                                            </div>
+
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.osram.asia/cb/" target="_blank" class="rollover" summary="rollover">
+
+
+                                            <img src="osram-grey.png" alt="Osram" style="display:block" alt="hover" width="255" border="0">
+                                            <!-- Visible image -->
+
+                                            <div style="mso-hide:all;">
+                                                <!-- Hides invisible image in Outlook -->
+
+                                                <img src="osram-col.png" style="max-height:0px;display:block" alt="" width="255" border="0">
+                                                <!-- Invisible image -->
+
+                                            </div>
+
+                                        </a>
+                                    </td>
                         </td>
+                        </tr>
+                        </table>
                     </tr>
                     <!-- disclaimer text-->
                     <tr>
                         <td class="disclaimer-text" colspan="6">
                             Disclaimer:
-                            <br/>This message contains confidential information intended for the use of the addressee
-                            named above. If you are not the intended recipient of this message you must not view, disseminate,
-                            copy or take any action in reliance on it. If you have received this message in error please
-                            notify Brown and Watson immediately. Any views expressed in this message are those of the individual
-                            sender, except where the sender specifically states them to be the views of Brown & Watson International
+                            <br/>This message contains confidential information intended for the use of the addressee named above.
+                            If you are not the intended recipient of this message you must not view, disseminate, copy or
+                            take any action in reliance on it. If you have received this message in error please notify Brown
+                            and Watson immediately. Any views expressed in this message are those of the individual sender,
+                            except where the sender specifically states them to be the views of Brown & Watson International
                             P/L.
-                            
-                            <br/><br/>This email has been scanned for viruses and malware, and may have been automatically archived
+
+                            <br/>
+                            <br/>This email has been scanned for viruses and malware, and may have been automatically archived
                             by Mimecast Ltd, an innovator in Software as a Service (SaaS) for business. Providing a safer
                             and more useful place for your human generated data. Specializing in; Security, archiving and
-                            compliance. To find out more <a href="https://www.mimecast.com/products/" alt="Click Here">Click Here.</a>
+                            compliance. To find out more
+                            <a href="https://www.mimecast.com/products/" alt="Click Here">Click Here.</a>
 
                             <!-- disclaimer text here exactly-->
                         </td>
