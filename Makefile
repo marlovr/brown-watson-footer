@@ -1,0 +1,2 @@
+inline:
+	node inline.js
