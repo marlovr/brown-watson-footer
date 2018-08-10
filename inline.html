@@ -1,61 +1,287 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600');
 
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        opacity: 0.9;
+    }
+
+    table,
+    td,
+    tr {
+        padding: 0;
+        
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+    }
+
+    .section-one,
+    .section-two {
+        width: 100%;
+    }
+
+
+    .col-first {
+        width: 160px;
+        vertical-align: bottom;
+        padding-right: 5px;
+    }
+
+    .col-first.col-align-top {
+        vertical-align: top;
+    }
+
+    .col-last {
+        width: 39px;
+        vertical-align: bottom;
+    }
+
+    .section-one-inner,
+    .section-two-inner {
+        width: 100%;
+    }
+
+    .section-one-inner table {
+        width: 100%;
+    }
+
+    .section-two-inner {
+
+    }
+
+    .personal-info,
+    .personal-info table {
+        background-color: #25408f;
+        color: #ffffff;
+        
+        font-weight: 600;
+
+    }
+
+    .personal-info table {
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    .personal-info .container {
+        padding-left: 10px;
+        height: 67px;
+    }
+
+    .personal-info .email,
+    .personal-info .phone,
+    .personal-info .fax {
+        text-align: right;
+        font-size: 10pt;
+        letter-spacing: 0.5px;
+        padding-right: 10px;
+        height: 30px;
+    }
+
+    .personal-info .line-one {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    .personal-info .line-two {
+        vertical-align: top;
+        font-size: 10pt;
+    }
+
+    .personal-info .email td {
+        text-align: right;
+    }
+
+    .brand-images img {
+        width: auto;
+    }
+
+    .brand-images td {}
+
+    .brand-images td:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+
+    .disclaimer-text {
+        color: #b1b4b6;
+        font-size: 6.5pt;
+        text-align: justify;
+        font-weight: 400;
+        line-height: 10px;
+    }
+
+    .section-two {}
+
+    .bwi-logo-image {
+        width: 100%;
+    }
+
+    table.contact-info {
+        height: 100%;
+        width: 155px;
+    }
+
+    .contact-info .address {
+        height: 67px;
+    }
+
+    .contact-info .address div {
+        font-size: 7.5pt;
+        color: #9797c3;
+        line-height: 17px;
+    }
+
+    .contact-info .address div:first-child {
+        text-align: justify;
+    }
+
+    .contact-info .address div:first-child:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+
+    .contact-info .phone-fax {
+        font-size: 9pt;
+        color: #9797c3;
+        height: 41px;
+    }
+
+    .contact-info .phone-fax div {
+        text-align: justify;
+        line-height: 21px;
+    }
+
+    .contact-info .phone-fax div:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+
+    .personal-info .fax td {
+        text-align: right;
+    }
+
+    .personal-info td p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    .bwi-bubble {
+        text-align: right;
+
+
+    }
+
+    
+
+    .brand-images table {
+        width: 100%;
+        text-align: center;
+    }
+
+    .brand-images table td:last-child {
+        text-align: right;
+    }
+
+    .brand-images table td:first-child {
+        text-align: left;
+    }
+
+    .rollover {
+        display: inline-block;
+    }
+
+    .rollover:hover>img,
+    * [summary=rollover]:hover>img {
+        max-height: 0px !important;
+        opacity: 1;
+    }
+
+    
+
+    .rollover:hover>div img,
+    * [summary=rollover]:hover>div img {
+        max-height: none !important;
+    }
+
+    .disclaimer-text a {
+        color: #b1b4b6;
+
+    }
+
+    .disclaimer-text a:hover {
+        font-weight: bold;
+        color: #333;
+    }
+
+    
+</style>
 <div>
     <!-- table contains first half of footer containing BWI logo, 
         email balloon, email contacts below and qa image-->
-    <table class="section-one" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; width: 100%;">
-        <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
+    <table class="section-one" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:100%;" >
+        <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
 
             <!-- START BWI IMAGE HERE -->
-            <td class="col-first" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; padding-right: 5px; vertical-align: bottom; width: 160px;">
-                <a href="https://brownwatson.com.au" target="_blank" style="color: #ffffff; text-decoration: none;">
-                    <img class="bwi-logo-image" src="bwi-logo.png" width="160" height="113.59" style="width: 100%;">
+            <td class="col-first" style="padding-top:0;padding-bottom:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:160px;vertical-align:bottom;padding-right:5px;" >
+                <a href="https://brownwatson.com.au" target="_blank">
+                    <img class="bwi-logo-image" src="http://brown-watson.yourfilehosted.review/bwi-logo.png" width="160" height="113.59" style="width:100%;" />
                 </a>
                 <!-- END BWI IMAGE HERE-->
             </td>
 
-            <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
+            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
                 <!-- Contact info and email balloon-->
-                <table class="section-one-inner" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; width: 100%;">
-                    <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                        <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                            <table style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; width: 100%;">
-                                <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
+                <table class="section-one-inner" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:100%;" >
+                    <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                            <table style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:100%;" >
+                                <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
 
                                     </td>
-                                    <td class="bwi-bubble" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; text-align: right;">
-                                        <img src="bwi-bubble.png" width="145" height="119">
+                                    <td class="bwi-bubble" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;text-align:right;" >
+                                        <img src="http://brown-watson.yourfilehosted.review/bwi-bubble.png" width="145" height="119">
                                     </td>
                                 </tr>
                             </table>
-                            <table class="personal-info" cellspacing="7" style="background-color: #25408f; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-weight: 600; letter-spacing: 0.25px; padding: 0; width: 100%;">
-                                <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                        <table class="container" style="background-color: #25408f; border-spacing: 0; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-weight: 600; height: 67px; letter-spacing: 0.25px; padding: 0; padding-left: 10px; width: 100%;">
-                                            <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                <td class="line-one" style="font-family: 'Libre Franklin', sans-serif; font-size: 14pt; font-weight: bold; letter-spacing: 0.25px; padding: 0;">
+                            <table class="personal-info" cellspacing="7" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;background-color:#25408f;color:#ffffff;font-weight:600;width:100%;" >
+                                <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                        <table class="container" style="padding-top:0;padding-bottom:0;padding-right:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;background-color:#25408f;color:#ffffff;font-weight:600;width:100%;border-spacing:0;padding-left:10px;height:67px;" >
+                                            <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                <td class="line-one" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;font-size:14pt;font-weight:bold;" >
                                                     Benny Blood
                                                 </td>
                                             </tr>
-                                            <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                <td class="line-two" style="font-family: 'Libre Franklin', sans-serif; font-size: 10pt; font-weight: 500; letter-spacing: 0.25px; padding: 0; vertical-align: top;">
+                                            <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                <td class="line-two" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;vertical-align:top;font-size:10pt;" >
                                                     Customer Service Officer
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                        <table style="background-color: #25408f; border-spacing: 0; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-weight: 600; letter-spacing: 0.25px; padding: 0; width: 100%;">
-                                            <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                    <table style="background-color: #25408f; border-spacing: 0; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-weight: 600; letter-spacing: 0.25px; padding: 0; width: 100%;">
-                                                        <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                            <td class="personal-info email" style="background-color: #25408f; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-size: 10pt; font-weight: 600; height: 30px; letter-spacing: 0.5px; padding: 0; padding-right: 10px; text-align: right;">
-                                                                <p style="display: inline-block; margin: 0; vertical-align: middle;">
-                                                                    <img src="e-dot.png">
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                        <table style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;background-color:#25408f;color:#ffffff;font-weight:600;width:100%;border-spacing:0;" >
+                                            <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                    <table style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;background-color:#25408f;color:#ffffff;font-weight:600;width:100%;border-spacing:0;" >
+                                                        <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                            <td class="personal-info email" style="padding-top:0;padding-bottom:0;padding-left:0;font-family:'Libre Franklin', sans-serif;background-color:#25408f;color:#ffffff;font-weight:600;text-align:right;font-size:10pt;letter-spacing:0.5px;padding-right:10px;height:30px;" >
+                                                                <p style="display:inline-block;vertical-align:middle;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;" >
+                                                                    <img src="http://brown-watson.yourfilehosted.review/e-dot.png">
                                                                 </p>
-                                                                <p style="display: inline-block; margin: 0; vertical-align: middle;">
-                                                                    <a href="mailto:bennyb@brownwatson.com.au" style="color: #ffffff; text-decoration: none;">bennyblood@brownwatson.com.au</a>
+                                                                <p style="display:inline-block;vertical-align:middle;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;" >
+                                                                    <a href="mailto:bennyb@brownwatson.com.au">bennyblood@brownwatson.com.au</a>
                                                                 </p>
                                                             </td>
                                                         </tr>
@@ -63,33 +289,33 @@
                                                     </table>
                                                 </td>
                                             </tr>
-                                            <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                    <table style="background-color: #25408f; border-spacing: 0; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-weight: 600; letter-spacing: 0.25px; padding: 0; width: 100%;">
-                                                        <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                            <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                                <table style="background-color: #25408f; border-spacing: 0; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-weight: 600; letter-spacing: 0.25px; padding: 0; width: 100%;">
-                                                                    <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
+                                            <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                    <table style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;background-color:#25408f;color:#ffffff;font-weight:600;width:100%;border-spacing:0;" >
+                                                        <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                                <table style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;background-color:#25408f;color:#ffffff;font-weight:600;width:100%;border-spacing:0;" >
+                                                                    <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
 
-                                                                        <td class="personal-info phone" style="background-color: #25408f; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-size: 10pt; font-weight: 600; height: 30px; letter-spacing: 0.5px; padding: 0; padding-right: 10px; text-align: right;">
-                                                                            <p style="display: inline-block; margin: 0; vertical-align: middle;">
-                                                                                <img src="p-dot.png">
+                                                                        <td class="personal-info phone" style="padding-top:0;padding-bottom:0;padding-left:0;font-family:'Libre Franklin', sans-serif;background-color:#25408f;color:#ffffff;font-weight:600;text-align:right;font-size:10pt;letter-spacing:0.5px;padding-right:10px;height:30px;" >
+                                                                            <p style="display:inline-block;vertical-align:middle;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;" >
+                                                                                <img src="http://brown-watson.yourfilehosted.review/p-dot.png">
                                                                             </p>
-                                                                            <p style="display: inline-block; margin: 0; vertical-align: middle;">+61 3 9730 6092</p>
+                                                                            <p style="display:inline-block;vertical-align:middle;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;" >+61 3 9730 6092</p>
 
                                                                         </td>
                                                                     </tr>
                                                                 </table>
                                                             </td>
 
-                                                            <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                                <table style="background-color: #25408f; border-spacing: 0; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-weight: 600; letter-spacing: 0.25px; padding: 0; width: 100%;">
-                                                                    <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                                                        <td class="personal-info fax" style="background-color: #25408f; color: #ffffff; font-family: 'Libre Franklin', sans-serif; font-size: 10pt; font-weight: 600; height: 30px; letter-spacing: 0.5px; padding: 0; padding-right: 10px; text-align: right;">
-                                                                            <p style="display: inline-block; margin: 0; vertical-align: middle;">
-                                                                                <img src="f-dot.png">
+                                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                                <table style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;background-color:#25408f;color:#ffffff;font-weight:600;width:100%;border-spacing:0;" >
+                                                                    <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                                                        <td class="personal-info fax" style="padding-top:0;padding-bottom:0;padding-left:0;font-family:'Libre Franklin', sans-serif;background-color:#25408f;color:#ffffff;font-weight:600;text-align:right;font-size:10pt;letter-spacing:0.5px;padding-right:10px;height:30px;" >
+                                                                            <p style="display:inline-block;vertical-align:middle;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;" >
+                                                                                <img src="http://brown-watson.yourfilehosted.review/f-dot.png">
                                                                             </p>
-                                                                            <p style="display: inline-block; margin: 0; vertical-align: middle;">+61 3 9730 6050</p>
+                                                                            <p style="display:inline-block;vertical-align:middle;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;" >+61 3 9730 6050</p>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -108,8 +334,9 @@
                 </table>
             </td>
             <!-- quality assurance image-->
-            <td class="col-last" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; vertical-align: bottom; width: 39px;">
-                <img class="qa-logo-image" alt="Certified System Quality Image" src="CertifiedSystemQualityImage.png" width="39" height="84">
+            <td class="col-last" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:39px;vertical-align:bottom;" >
+                <img class="qa-logo-image" alt="Certified System Quality Image" src="http://brown-watson.yourfilehosted.review/CertifiedSystemQualityImage.png" width="39" height="84"
+                />
             </td>
 
 
@@ -117,27 +344,27 @@
     </table>
     <!-- contains second half of footer:
         text with contact info, logos and disclaimer text-->
-    <table class="section-two" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; width: 100%;">
+    <table class="section-two" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:100%;" >
 
-        <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
+        <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
             <!-- contact info text-->
 
-            <td class="col-first col-align-top" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; padding-right: 5px; vertical-align: top; width: 160px;">
-                <table class="contact-info" cellspacing="6" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; height: 100%; letter-spacing: 0.25px; padding: 0; width: 155px;">
-                    <tr class="address" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; height: 67px; letter-spacing: 0.25px; padding: 0;">
-                        <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                            <div style="color: #9797c3; font-size: 7.5pt; line-height: 17px; text-align: justify;">1500 Ferntree Gully Road</div>
-                            <div style="color: #9797c3; font-size: 7.5pt; line-height: 17px;">Knoxfield Victoria 3180</div>
-                            <div style="color: #9797c3; font-size: 7.5pt; line-height: 17px;">Australia</div>
+            <td class="col-first col-align-top" style="padding-top:0;padding-bottom:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:160px;vertical-align:bottom;padding-right:5px;" >
+                <table class="contact-info" cellspacing="6" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;height:100%;width:155px;" >
+                    <tr class="address" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;height:67px;" >
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                            <div style="font-size:7.5pt;color:#9797c3;line-height:17px;" >1500 Ferntree Gully Road</div>
+                            <div style="font-size:7.5pt;color:#9797c3;line-height:17px;" >Knoxfield Victoria 3180</div>
+                            <div style="font-size:7.5pt;color:#9797c3;line-height:17px;" >Australia</div>
                             <!-- address -->
                         </td>
                     </tr>
-                    <tr class="phone-fax" style="color: #9797c3; font-family: 'Libre Franklin', sans-serif; font-size: 9pt; font-weight: 500; height: 41px; letter-spacing: 0.25px; padding: 0;">
-                        <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                            <div style="line-height: 21px; text-align: justify;">
+                    <tr class="phone-fax" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;font-size:9pt;color:#9797c3;height:41px;" >
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                            <div style="text-align:justify;line-height:21px;" >
                                 P: +61 3 9730 6000
                             </div>
-                            <div style="line-height: 21px; text-align: justify;">
+                            <div style="text-align:justify;line-height:21px;" >
                                 F: +61 3 9730 6050
                             </div>
                             <!-- phone and fax -->
@@ -146,148 +373,148 @@
                 </table>
             </td>
             <!-- where second table is: logos and disclaimer text-->
-            <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
+            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
                 <!-- contains logos and disclaimer text-->
-                <table class="section-two-inner" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; width: 100%;">
+                <table class="section-two-inner" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:100%;" >
                     <!-- logos-->
-                    <tr class="brand-images" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                        <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                            <table style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; text-align: center; width: 100%;">
-                                <tr class="brand-images" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
+                    <tr class="brand-images" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                            <table style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:100%;text-align:center;" >
+                                <tr class="brand-images" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
                                     <!-- WHOLE ROW OF IMAGES -->
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; text-align: left;">
-                                        <a href="https://www.narva.com.au" target="_blank" class="rollover" summary="rollover" style="color: #ffffff; display: inline-block; text-decoration: none;">
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                        <a href="https://www.narva.com.au" target="_blank" class="rollover" summary="rollover" style="display:inline-block;" >
 
 
-                                            <img src="narva-grey.png" alt="Narva" style="display: block; width: auto;" width="255" border="0">
+                                            <img src="http://brown-watson.yourfilehosted.review/narva-grey.png" alt="Narva"  alt="hover" width="255" border="0" style="display:block;width:auto;" >
                                             <!-- Visible image -->
 
-                                            <div style="mso-hide:all;">
+                                            <div style="mso-hide:all;" >
                                                 <!-- Hides invisible image in Outlook -->
 
-                                                <img src="narva-col.png" style="display: block; max-height: 0px; width: auto;" alt="" width="255" border="0">
+                                                <img src="http://brown-watson.yourfilehosted.review/narva-col.png"  alt="" width="255" border="0" style="max-height:0px;display:block;width:auto;" >
                                                 <!-- Invisible image -->
 
                                             </div>
 
                                         </a>
                                     </td>
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                        <a href="https://www.projecta.com.au/" target="_blank" class="rollover" summary="rollover" style="color: #ffffff; display: inline-block; text-decoration: none;">
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                        <a href="https://www.projecta.com.au/" target="_blank" class="rollover" summary="rollover" style="display:inline-block;" >
 
 
-                                            <img src="projecta-grey.png" alt="Projecta" style="display: block; width: auto;" width="255" border="0">
+                                            <img src="http://brown-watson.yourfilehosted.review/projecta-grey.png" alt="Projecta"  alt="hover" width="255" border="0" style="display:block;width:auto;" >
                                             <!-- Visible image -->
 
-                                            <div style="mso-hide:all;">
+                                            <div style="mso-hide:all;" >
                                                 <!-- Hides invisible image in Outlook -->
 
-                                                <img src="projecta-col.png" style="display: block; max-height: 0px; width: auto;" alt="" width="255" border="0">
+                                                <img src="http://brown-watson.yourfilehosted.review/projecta-col.png"  alt="" width="255" border="0" style="max-height:0px;display:block;width:auto;" >
                                                 <!-- Invisible image -->
 
                                             </div>
 
                                         </a>
                                     </td>
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                        <a href="http://www.bigredled.com.au/" target="_blank" class="rollover big-red" summary="rollover" style="color: #ffffff; display: inline-block; text-decoration: none;">
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                        <a href="http://www.bigredled.com.au/" target="_blank" class="rollover big-red" summary="rollover" style="display:inline-block;" >
 
 
-                                            <img src="bigred-grey.png" alt="Big Red" style="display: block; width: auto;" width="255" border="0">
+                                            <img src="http://brown-watson.yourfilehosted.review/bigred-grey.png" alt="Big Red"  alt="hover" width="255" border="0" style="display:block;width:auto;" >
                                             <!-- Visible image -->
 
-                                            <div style="mso-hide:all;">
+                                            <div style="mso-hide:all;" >
                                                 <!-- Hides invisible image in Outlook -->
 
-                                                <img src="bigred-col.png" style="display: block; max-height: 0px; width: auto;" alt="" width="255" border="0">
+                                                <img src="http://brown-watson.yourfilehosted.review/bigred-col.png"  alt="" width="255" border="0" style="max-height:0px;display:block;width:auto;" >
                                                 <!-- Invisible image -->
 
                                             </div>
 
                                         </a>
                                     </td>
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                        <a class="rollover maxi-light" summary="rollover" style="color: #ffffff; display: inline-block; text-decoration: none;">
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                        <a class="rollover maxi-light" summary="rollover" style="display:inline-block;" >
 
 
-                                            <img src="maxi-grey.png" style="display: block; width: auto;" alt="hover" width="255" border="0">
+                                            <img src="http://brown-watson.yourfilehosted.review/maxi-grey.png"  alt="hover" width="255" border="0" style="display:block;width:auto;" >
                                             <!-- Visible image -->
 
-                                            <div style="mso-hide:all;">
+                                            <div style="mso-hide:all;" >
                                                 <!-- Hides invisible image in Outlook -->
 
-                                                <img src="maxi-col.png" style="display: block; max-height: 0px; width: auto;" alt="" width="255" border="0">
+                                                <img src="http://brown-watson.yourfilehosted.review/maxi-col.png"  alt="" width="255" border="0" style="max-height:0px;display:block;width:auto;" >
                                                 <!-- Invisible image -->
 
                                             </div>
 
                                         </a>
                                     </td>
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                                        <a href="https://www.philips.com.au/" target="_blank" class="rollover phillips" summary="rollover" style="color: #ffffff; display: inline-block; text-decoration: none;">
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                        <a href="https://www.philips.com.au/" target="_blank" class="rollover phillips" summary="rollover" style="display:inline-block;" >
 
 
-                                            <img src="phillips-grey.png" alt="Phillips" style="display: block; width: auto;" width="255" border="0">
+                                            <img src="http://brown-watson.yourfilehosted.review/phillips-grey.png" alt="Phillips"  alt="hover" width="255" border="0" style="display:block;width:auto;" >
                                             <!-- Visible image -->
 
-                                            <div style="mso-hide:all;">
+                                            <div style="mso-hide:all;" >
                                                 <!-- Hides invisible image in Outlook -->
 
-                                                <img src="phillips-col.png" style="display: block; max-height: 0px; width: auto;" alt="" width="255" border="0">
+                                                <img src="http://brown-watson.yourfilehosted.review/phillips-col.png"  alt="" width="255" border="0" style="max-height:0px;display:block;width:auto;" >
                                                 <!-- Invisible image -->
 
                                             </div>
 
                                         </a>
                                     </td>
-                                    <td style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; text-align: right;">
-                                        <a href="https://www.osram.asia/cb/" target="_blank" class="rollover" summary="rollover" style="color: #ffffff; display: inline-block; text-decoration: none;">
+                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                                        <a href="https://www.osram.asia/cb/" target="_blank" class="rollover" summary="rollover" style="display:inline-block;" >
 
 
-                                            <img src="osram-grey.png" alt="Osram" style="display: block; width: auto;" width="255" border="0">
+                                            <img src="http://brown-watson.yourfilehosted.review/osram-grey.png" alt="Osram"  alt="hover" width="255" border="0" style="display:block;width:auto;" >
                                             <!-- Visible image -->
 
-                                            <div style="mso-hide:all;">
+                                            <div style="mso-hide:all;" >
                                                 <!-- Hides invisible image in Outlook -->
 
-                                                <img src="osram-col.png" style="display: block; max-height: 0px; width: auto;" alt="" width="255" border="0">
+                                                <img src="http://brown-watson.yourfilehosted.review/osram-col.png"  alt="" width="255" border="0" style="max-height:0px;display:block;width:auto;" >
                                                 <!-- Invisible image -->
 
                                             </div>
 
                                         </a>
                                     </td>
-                        </tr></table></td>
+                        </td>
                         </tr>
                         </table>
-                    </td></tr>
+                    </tr>
                     <!-- disclaimer text-->
-                    <tr style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0;">
-                        <td class="disclaimer-text" colspan="6" style="color: #b1b4b6; font-family: 'Libre Franklin', sans-serif; font-size: 6.5pt; font-weight: 400; letter-spacing: 0.25px; line-height: 10px; padding: 0; text-align: justify;">
+                    <tr style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;" >
+                        <td class="disclaimer-text" colspan="6" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;letter-spacing:0.25px;color:#b1b4b6;font-size:6.5pt;text-align:justify;font-weight:400;line-height:10px;" >
                             Disclaimer:
-                            <br>This message contains confidential information intended for the use of the addressee named above.
+                            <br/>This message contains confidential information intended for the use of the addressee named above.
                             If you are not the intended recipient of this message you must not view, disseminate, copy or
                             take any action in reliance on it. If you have received this message in error please notify Brown
                             and Watson immediately. Any views expressed in this message are those of the individual sender,
                             except where the sender specifically states them to be the views of Brown & Watson International
                             P/L.
 
-                            <br>
-                            <br>This email has been scanned for viruses and malware, and may have been automatically archived
+                            <br/>
+                            <br/>This email has been scanned for viruses and malware, and may have been automatically archived
                             by Mimecast Ltd, an innovator in Software as a Service (SaaS) for business. Providing a safer
                             and more useful place for your human generated data. Specializing in; Security, archiving and
                             compliance. To find out more
-                            <a href="https://www.mimecast.com/products/" alt="Click Here" style="color: #b1b4b6; text-decoration: none;">Click Here.</a>
+                            <a href="https://www.mimecast.com/products/" alt="Click Here" style="color:#b1b4b6;" >Click Here.</a>
 
                             <!-- disclaimer text here exactly-->
                         </td>
                     </tr>
                 </table>
-            
-            <td class="col-last" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; letter-spacing: 0.25px; padding: 0; vertical-align: bottom; width: 39px;">
+            </td>
+            <td class="col-last" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Libre Franklin', sans-serif;font-weight:500;letter-spacing:0.25px;width:39px;vertical-align:bottom;" >
 
             </td>
 
-        
-    
+        </tr>
+    </table>
 </div>

@@ -1,2 +1,2 @@
 inline:
-	node inline.js
+	@chmod +x inline.sh && ./inline.sh
