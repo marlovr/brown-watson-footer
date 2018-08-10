@@ -26,10 +26,6 @@
         width: 100%;
     }
 
-    .section-one td,
-    .section-two td {
-        /* border: 1px solid black; */
-    }
 
     .col-first {
         width: 160px;
@@ -51,71 +47,32 @@
         width: 100%;
     }
 
-    .section-one-inner .row-one,
-    .section-two-inner {
-        /* height: 200px; */
-    }
-
-    .section-one-inner .row-one td:first-child {
-        text-align: right;
-    }
-
-    .section-one-inner .row-two {
-        /*height: 128px;*/
+    .section-one-inner table {
+        width: 100%;
     }
 
     .section-two-inner {
-        height: 114px;
+
     }
 
     .personal-info,
     .personal-info table {
         background-color: #25408f;
         color: #ffffff;
-        padding: 10px;
-        vertical-align: top;
+        /* vertical-align: top; */
         font-weight: 600;
-
 
     }
 
     .personal-info table {
         width: 100%;
-        height: 100%;
-        border-color: #ffffff;
+        border-spacing: 0;
     }
 
-    .personal-info table td {
-        vertical-align: top;
-        border: 0;
+    .personal-info .container {
+        padding-left: 10px;
+        height: 67px;
     }
-
-    .personal-info .top-row {
-        height: 25px;
-    }
-
-    .personal-info .bottom-row {
-        /* height: 40px;*/
-    }
-
-    .personal-info .bottom-row {}
-
-    .personal-info .icon {
-        /* background-color: #fff;
-        color: #25408e;
-        border-radius: 50%;*/
-        position: relative;
-        top: 5px;
-        display: inline-block;
-        /* width: 21px; */
-    }
-
-    /* .personal-info .icon span {
-        position: relative;
-        left: -5px;
-        top: -1px;
-        font-stretch: expanded;
-    } */
 
     .personal-info .email,
     .personal-info .phone,
@@ -123,26 +80,23 @@
         text-align: right;
         font-size: 10pt;
         letter-spacing: 0.5px;
-        position: relative;
-        top: -2px;
+        padding-right: 10px;
+        height: 30px;
     }
 
-    .personal-info .phone,
-    .personal-info .fax {
-        vertical-align: bottom;
-        padding-top: 12px;
-    }
-
-    .personal-info .name {
+    .personal-info .line-one {
         font-size: 14pt;
         font-weight: bold;
     }
 
-    .personal-info .position {
+    .personal-info .line-two {
+        vertical-align: top;
         font-size: 10pt;
-        width: 40%;
     }
 
+    .personal-info .email td {
+        text-align: right;
+    }
 
     .brand-images img {
         width: auto;
@@ -168,12 +122,6 @@
 
     .bwi-logo-image {
         width: 100%;
-        position: relative;
-    }
-
-    .qa-logo-image {
-        width: 39px;
-        height: 86px;
     }
 
     table.contact-info {
@@ -218,11 +166,19 @@
         width: 100%;
     }
 
+    .personal-info .fax td {
+        text-align: right;
+    }
+
+    .personal-info td p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
+
     .bwi-bubble {
-        width: 100%;
-        position: relative;
-        right: 20px;
-        bottom: -9px;
+        text-align: right;
+
 
     }
 
@@ -287,71 +243,101 @@
             <td>
                 <!-- Contact info and email balloon-->
                 <table class="section-one-inner">
-                    <!-- BWI EMAIL BALLOON-->
-                    <!-- tr row one-->
-                    <tr class="row-one">
-
-                        <td>
-                            <div class="bwi-bubble">
-                                <img src="bwi-bubble.png" />
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- BLUE CONTACT ELEMENT-->
-                    <!-- tr row two-->
-                    <tr class="row-two personal-info">
+                    <tr>
                         <td>
                             <table>
-                                <tr class="top-row">
-                                    <!-- Name and email-->
-                                    <td class="name">
-                                        <a href="mailto:bennyb@brownwatson.com.au">Benny Blood</a>
-                                        <!-- name -->
-                                    </td>
-                                    <td class="email" colspan="2">
-                                        <div class="icon">
-                                            <img src="e-dot.png" />
-                                        </div>
+                                <tr>
+                                    <td>
 
-                                        <a href="mailto:bennyb@brownwatson.com.au">bennyb@brownwatson.com.au</a>
-
-
-                                        <!-- email -->
                                     </td>
-                                </tr>
-
-                                <tr class="bottom-row">
-                                    <!-- position declaration, phone and fax-->
-                                    <td class="position">
-                                        Customer Service Officer
-                                        <!-- position declaration -->
-                                    </td>
-                                    <td class="phone">
-                                        <div class="icon">
-                                            <img src="p-dot.png" />
-                                        </div>
-                                        +61 3 9730 6092
-                                        <!-- phone -->
-                                    </td>
-                                    <td class="fax">
-                                        <div class="icon">
-                                            <img src="f-dot.png" />
-                                        </div>
-                                        +61 3 9730 6050
-                                        <!-- fax -->
+                                    <td class="bwi-bubble">
+                                        <img src="bwi-bubble.png" width="145" height="119">
                                     </td>
                                 </tr>
                             </table>
+                            <table class="personal-info" cellspacing="7">
+                                <tr>
+                                    <td>
+                                        <table class="container">
+                                            <tr>
+                                                <td class="line-one">
+                                                    Benny Blood
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="line-two">
+                                                    Customer Service Officer
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="personal-info email">
+                                                                <p>
+                                                                    <img src="e-dot.png">
+                                                                </p>
+                                                                <p>
+                                                                    <a href="mailto:bennyb@brownwatson.com.au">bennyblood@brownwatson.com.au</a>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
 
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <table>
+                                                                    <tr>
+
+                                                                        <td class="personal-info phone">
+                                                                            <p>
+                                                                                <img src="p-dot.png">
+                                                                            </p>
+                                                                            <p>+61 3 9730 6092</p>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+
+                                                            <td>
+                                                                <table>
+                                                                    <tr>
+                                                                        <td class="personal-info fax">
+                                                                            <p>
+                                                                                <img src="f-dot.png">
+                                                                            </p>
+                                                                            <p>+61 3 9730 6050</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
 
                 </table>
-
             </td>
             <!-- quality assurance image-->
             <td class="col-last">
-                <img class="qa-logo-image" alt="Certified System Quality Image" src="CertifiedSystemQualityImage.png" width="39" height="84"/>
+                <img class="qa-logo-image" alt="Certified System Quality Image" src="CertifiedSystemQualityImage.png" width="39" height="84"
+                />
             </td>
 
 
